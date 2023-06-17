@@ -5,7 +5,7 @@ import Landing from "../components/Landing";
 import Products from '../components/Products';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
-
+import Signup from '../components/Signup';
 function App() {
   let Component;
 
@@ -21,7 +21,11 @@ function App() {
     )
   }
   function SignUp() {
-    return null
+    return (
+      <>
+      <Signup/>
+      </>
+    )
   }
   function Login() {
     return null
@@ -36,6 +40,8 @@ function App() {
     case "/login":
       Component = Login
       break;
+    default:
+      Component = Home
   }
 
 

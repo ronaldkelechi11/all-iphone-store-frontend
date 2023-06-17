@@ -1,7 +1,7 @@
 import '../styles/Landing.scss'
 const Landing = () => {
     return (
-        <div className='landing'>
+        <div className='landing' id='landing'>
             <div className="tint">
                 <div className="center">
                     <div className="largeText">10% off for all first time Shoppers.</div>
