@@ -1,0 +1,79 @@
+@import 'variables';
+
+.landing {
+    height: 100vh;
+    width: 100vw;
+    background: url("../assets/images/background.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .tint {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-color: #00000088;
+        justify-content: center;
+        align-items: center;
+
+        .center {
+            width: 80%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .largeText {
+                font-family: $mainFontFamily;
+                color: $white;
+                font-size: 64px;
+                font-weight: bold;
+                position: relative;
+                animation: heartbeat 1s infinite ease-out;
+            }
+
+            .mediumText {
+                font-family: $mainFontFamily;
+                color: $white;
+                font-size: $mediumFontSize;
+            }
+
+            .searchBar {
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+
+                .search {
+                    height: 40px;
+                    width: 250px;
+                    border: none;
+                    border-bottom-left-radius: 10px;
+                    border-top-left-radius: 10px;
+                    padding: 10px;
+                    outline: none;
+                    font-size: $smallFontSize;
+                    font-family: $mainFontFamily;
+                }
+
+
+                .searchButton {
+                    cursor: pointer;
+                    height: 40px;
+                    padding: 10px;
+                    background-color: black;
+                    color: $white;
+                    font-size: $smallFontSize;
+                    font-family: $mainFontFamily;
+                    border: none;
+                    border-bottom-right-radius: 10px;
+                    border-top-right-radius: 10px;
+
+                    &:hover {
+                        background-color: $primaryColor;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

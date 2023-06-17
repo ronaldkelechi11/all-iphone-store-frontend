@@ -1,0 +1,50 @@
+@import 'variables';
+
+.navbar {
+    z-index: 1000;
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    .logo {
+        cursor: pointer;
+        color: $white;
+        font-size: $mediumFontSize;
+        font-family: 'Agency Fb';
+        font-weight: bold;
+    }
+
+    .links {
+        margin-right: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        font-size: $smallFontSize;
+        font-family: $mainFontFamily;
+
+        a {
+            text-decoration: none;
+            color: $white;
+            cursor: pointer;
+            margin: 10px;
+            transition: 0.5s;
+
+
+            &.account-button {
+                display: none;
+            }
+
+            &:hover {
+                color: $primaryColor;
+                transform: scale(1.2);
+
+            }
+        }
+    }
+}
