@@ -1,13 +1,16 @@
 import '../styles/Signup.scss'
 
 const Signup = () => {
+    function goBack() {
+        window.location.pathname = '/'
+    }
     function goToLogin() {
-        alert('Wayo')
+        window.location.pathname = '/login'
     }
 
     return (
         <div className="signup">
-            <div className="navbar">
+            <div className="navbar" onClick={goBack}>
                 <div className="img"></div>
             </div>
             <div className="flex">

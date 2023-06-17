@@ -6,6 +6,8 @@ import Products from '../components/Products';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Signup from '../components/Signup';
+import LogIn from '../components/Login';
+
 function App() {
   let Component;
 
@@ -23,13 +25,19 @@ function App() {
   function SignUp() {
     return (
       <>
-      <Signup/>
+        <Signup />
       </>
     )
   }
   function Login() {
-    return null
+    return (
+      <>
+        <LogIn />
+      </>
+    )
   }
+
+  // My own router
   switch (window.location.pathname) {
     case "/":
       Component = Home
