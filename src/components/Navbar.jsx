@@ -1,8 +1,9 @@
 import '../styles/Navbar.scss'
 
 const Navbar = () => {
-    const LOCAL_STORAGE_AUTH = 'alliphonestore.isSignedIn'
+    const LOCAL_STORAGE_AUTH = localStorage.getItem('alliphonestore.isSignedIn')
 
+    console.log(LOCAL_STORAGE_AUTH);
     return (
         <div className='navbar'>
             <div className="logo">All Iphone Store</div>

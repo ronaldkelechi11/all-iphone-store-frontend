@@ -3,8 +3,9 @@ import '../styles/Signup.scss'
 
 const Signup = () => {
     const LOCAL_STORAGE_AUTH = 'alliphonestore.isSignedIn'
-    const url = import.meta.env.APIURL + "/signup"
+    const url = import.meta.env.VITE_APIURL + "/signup"
 
+    console.log(url);
     // States for input elements
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
