@@ -39,6 +39,9 @@ const Login = () => {
                     window.location = "/"
                     localStorage.setItem(LOCAL_STORAGE_AUTH, true);
                 }
+                if (response.status == 300) {
+                    window.location = "/admin"
+                }
                 else if (response.status == 400) {
                     alert("User with that Email or Password doesn't exist try again or Try signing up")
                 }

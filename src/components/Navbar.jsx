@@ -3,7 +3,9 @@ import '../styles/Navbar.scss'
 const Navbar = () => {
     const LOCAL_STORAGE_AUTH = localStorage.getItem('alliphonestore.isSignedIn')
 
-    console.log(LOCAL_STORAGE_AUTH);
+    function logout() {
+        localStorage.setItem('alliphonestore.isSignedIn', '')
+    }
     return (
         <div className='navbar'>
             <div className="logo">All Iphone Store</div>
@@ -14,7 +16,8 @@ const Navbar = () => {
                 <a href="/#contactus">Contact</a>
                 <a href="/signup" className={LOCAL_STORAGE_AUTH ? 'inactive' : ''} id="signup-button">Sign Up</a>
                 <a href="/login" className={LOCAL_STORAGE_AUTH ? 'inactive' : ''} id="login-button">Log In</a>
-                <a href="#" className={LOCAL_STORAGE_AUTH ? '' : 'inactive'} id="account-button">Cart</a>
+                <a href="/login" className={LOCAL_STORAGE_AUTH ? '' : 'inactive'} onClick={logout} id="login-button">Account</a>
+                <a href="#" id="account-button">Cart</a>
             </div>
 
         </div>
