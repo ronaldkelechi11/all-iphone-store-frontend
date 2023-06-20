@@ -5,8 +5,8 @@ import Landing from "../components/Landing";
 import Products from '../components/Products';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
-import Signup from '../components/Signup';
-import LogIn from '../components/Login';
+import Signup from './Signup';
+import LogIn from './Login';
 import ProductsView from './ProductsView';
 import Admin from './Admin';
 

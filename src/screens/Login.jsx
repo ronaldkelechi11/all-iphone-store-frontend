@@ -52,7 +52,7 @@ const Login = () => {
     return (
         <div className="login">
             <div className="navbar" id="navbar" onClick={goBack}>
-                X
+
             </div>
             <div className="flex">
                 <div className="left">
