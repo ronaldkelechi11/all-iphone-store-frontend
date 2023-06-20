@@ -23,6 +23,7 @@
     .links {
         margin-right: 10px;
         display: flex;
+        margin-right: 20px;
         justify-content: space-evenly;
         flex-direction: row;
         font-size: $smallFontSize;
@@ -36,7 +37,7 @@
             transition: 0.5s;
 
 
-            &.account-button {
+            &.inactive {
                 display: none;
             }
 

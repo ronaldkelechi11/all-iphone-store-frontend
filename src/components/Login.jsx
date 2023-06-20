@@ -1,6 +1,11 @@
 import '../styles/Login.scss'
-
+import { useState } from "react";
+// Find a way to make it you dont have to set the url everytime
 const Login = () => {
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+    const url = import.meta.env.APIURL + "/login"
+
     function goBack() {
         window.location.pathname = '/'
     }
@@ -10,7 +15,26 @@ const Login = () => {
 
     function submitForm(e) {
         e.preventDefault()
-        alert("Form Submitted")
+
+        var myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
+
+        var urlencoded = new URLSearchParams();
+        urlencoded.append("email", email);
+        urlencoded.append("password", password);
+
+        var requestOptions = {
+            method: 'POST',
+            headers: myHeaders,
+            body: urlencoded,
+            redirect: 'follow'
+        };
+
+        fetch(url, requestOptions)
+            .then(response => {
+                console.log(response);
+            })
+            .catch(error => console.log('error', error));
     }
 
     return (
@@ -24,8 +48,8 @@ const Login = () => {
                     <h4>Login to access our services on this device</h4>
 
                     <form method="post" id="form" onSubmit={submitForm}>
-                        <input type="email" name="email" id="email" placeholder="Email" required min="2" max="64" />
-                        <input type="password" name="password" id="password" placeholder="Password" required min="8"
+                        <input type="email" placeholder="Email" required min="2" max="64" />
+                        <input type="password" placeholder="Password" required min="8"
                             max="64" />
                         <input type="submit" value="Sign Up" id="submit_button" />
                     </form>

@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 import Signup from '../components/Signup';
 import LogIn from '../components/Login';
 import ProductsView from './ProductsView';
+import Admin from './Admin';
 
 function App() {
   let Component;
@@ -47,6 +48,12 @@ function App() {
     )
   }
 
+  function AdminView() {
+    return (
+      <Admin />
+    )
+  }
+
   // My own router
   switch (window.location.pathname) {
     case "/":
@@ -60,6 +67,9 @@ function App() {
       break;
     case "/products":
       Component = Productview
+      break;
+    case "/admin":
+      Component = AdminView
       break;
     default:
       Component = Home

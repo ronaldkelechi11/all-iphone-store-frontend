@@ -11,9 +11,9 @@ const Navbar = () => {
                 <a href="/#landing">Home</a>
                 <a href="/#products">Products</a>
                 <a href="/#contactus">Contact</a>
-                <a href="/signup" className={LOCAL_STORAGE_AUTH ? 'account-button' : ''} id="signup-button">Sign Up</a>
-                <a href="/login" className={LOCAL_STORAGE_AUTH ? 'account-button' : ''} id="login-button">Log In</a>
-                <a href="#" className={LOCAL_STORAGE_AUTH ? '' : 'account-button'} id="account-button">Cart</a>
+                <a href="/signup" className={LOCAL_STORAGE_AUTH ? 'inactive' : ''} id="signup-button">Sign Up</a>
+                <a href="/login" className={LOCAL_STORAGE_AUTH ? 'inactive' : ''} id="login-button">Log In</a>
+                <a href="#" className={LOCAL_STORAGE_AUTH ? '' : 'inactive'} id="account-button">Cart</a>
             </div>
 
         </div>

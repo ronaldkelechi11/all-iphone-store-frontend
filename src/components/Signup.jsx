@@ -2,8 +2,8 @@ import { useState } from 'react'
 import '../styles/Signup.scss'
 
 const Signup = () => {
-    const url = "http://localhost:3030/signup"
     const LOCAL_STORAGE_AUTH = 'alliphonestore.isSignedIn'
+    const url = import.meta.env.APIURL + "/signup"
 
     // States for input elements
     const [name, setName] = useState('')
