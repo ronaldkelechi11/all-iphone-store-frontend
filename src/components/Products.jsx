@@ -1,7 +1,12 @@
 import '../styles/Products.scss'
 
 const Products = () => {
+    function seemore() {
+        window.location = '/products'
+    }
+
     // Fetch function to get all available devices
+
     return (
         <div className="products" id="products">
             <div className="header">Featured Products</div>
@@ -59,13 +64,13 @@ const Products = () => {
                     <div className="price">N160,000</div>
                 </div>
             </div>
-            <div className="seemore" id="seemore">See more</div>
+            <div className="seemore" onClick={seemore} id="seemore">See more</div>
         </div>
     )
 }
 
 // Item Wrapper
-function ItemWrapper([items]) {
+export function ItemWrapper([items]) {
     return (
         <div className="itemWrapper">
             {items.map(item => {
@@ -76,7 +81,7 @@ function ItemWrapper([items]) {
 }
 
 // Item function
-function Item({ key, item }) {
+export function Item({ key, item }) {
     return (
         <div className="item" id="item">
             <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>

@@ -7,6 +7,7 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Signup from '../components/Signup';
 import LogIn from '../components/Login';
+import ProductsView from './ProductsView';
 
 function App() {
   let Component;
@@ -29,10 +30,19 @@ function App() {
       </>
     )
   }
+
   function Login() {
     return (
       <>
         <LogIn />
+      </>
+    )
+  }
+
+  function Productview() {
+    return (
+      <>
+        <ProductsView />
       </>
     )
   }
@@ -47,6 +57,9 @@ function App() {
       break;
     case "/login":
       Component = Login
+      break;
+    case "/products":
+      Component = Productview
       break;
     default:
       Component = Home

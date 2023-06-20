@@ -2,7 +2,8 @@ import { useState } from 'react'
 import '../styles/Signup.scss'
 
 const Signup = () => {
-    const url = "http://127.0.0.1:3030/signup"
+    const url = "http://localhost:3030/signup"
+    const LOCAL_STORAGE_AUTH = 'alliphonestore.isSignedIn'
 
     // States for input elements
     const [name, setName] = useState('')
@@ -33,7 +34,7 @@ const Signup = () => {
 
         var requestOptions = {
             method: 'POST',
-            // headers: myHeaders,
+            headers: myHeaders,
             body: urlencoded,
             redirect: 'follow'
         };
@@ -42,9 +43,11 @@ const Signup = () => {
             .then(response => {
                 if (response.status == 200) {
                     window.location.pathname = "/"
+                    localStorage.setItem(LOCAL_STORAGE_AUTH, 'true')
                 }
                 else if (response.status == 400) {
                     alert('User with that email has logged in before')
+                    localStorage.setItem(LOCAL_STORAGE_AUTH, 'true')
                 }
             })
             .catch(error => { console.log('error', error), alert('Error connecting to Server') });
