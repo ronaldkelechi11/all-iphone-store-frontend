@@ -6,7 +6,7 @@ import { Item, ItemWrapper } from "../components/Products"
 
 const ProductsView = () => {
     return (
-        <div className="productview">
+        <div className="productsview">
             <Navbar />
 
             <div className="searchBar">
