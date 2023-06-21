@@ -1,11 +1,13 @@
 import '../styles/Login.scss'
 import { useState } from "react";
-// Find a way to make it you dont have to set the url everytime
+
+
 const Login = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const url = import.meta.env.VITE_APIURL + "/login"
     const LOCAL_STORAGE_AUTH = 'alliphonestore.isSignedIn'
+    const LOCAL_STORAGE_ADMIN = 'alliphonestore.isAdmin'
 
     function goBack() {
         window.location.pathname = '/'
@@ -41,6 +43,7 @@ const Login = () => {
                 }
                 if (response.status == 300) {
                     window.location = "/admin"
+                    localStorage.setItem(LOCAL_STORAGE_ADMIN, true);
                 }
                 else if (response.status == 400) {
                     alert("User with that Email or Password doesn't exist try again or Try signing up")
