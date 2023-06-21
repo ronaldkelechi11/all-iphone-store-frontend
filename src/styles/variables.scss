@@ -52,3 +52,9 @@ $normalPadding: 10px;
     background-color: $primaryColor;
     transition: 0.5s;
 }
+
+@mixin mobile {
+    @media screen and (max-width: 440px) {
+        @content;
+    }
+}

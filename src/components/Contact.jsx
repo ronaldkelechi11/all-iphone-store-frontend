@@ -17,7 +17,7 @@ const Contact = () => {
                 <div className="map">
                     <iframe
                         src="https://www.bing.com/maps?q=Umuahia&satid=id.sid%3Ae57ab116-340c-5fb9-8d3a-a83700499230&cp=5.514076%7E7.495711&lvl=13.5"
-                        width="100%" height="100%" frameBorder="0" allowfullscreen></iframe>
+                        frameBorder="1" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
