@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar"
 
 const Admin = () => {
   const LOCAL_STORAGE_ADMIN = 'alliphonestore.isAdmin'
-  const url = import.meta.env.VITE_APIURL + "/login"
+  const url = import.meta.env.VITE_APIURL + "/admin/addItem"
 
   if (!localStorage.getItem(LOCAL_STORAGE_ADMIN)) {
     alert("You do not have authorized acces to the admin panel")
@@ -26,6 +26,52 @@ const Admin = () => {
 
 
   function formSubmit(e) {
+    e.preventDefault()
+    console.log('Submitting');
+    // return false
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
+
+    var urlencoded = new URLSearchParams();
+    urlencoded.append("name", name);
+    urlencoded.append("price", price);
+    urlencoded.append("condition", condition);
+    urlencoded.append("RAM", RAM);
+    urlencoded.append("storageSize", storageSize);
+    urlencoded.append("color", color);
+    urlencoded.append("issues", issues);
+    urlencoded.append("image1", image1);
+    urlencoded.append("image2", image2);
+    urlencoded.append("image3", image3);
+
+
+    var requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: urlencoded,
+      redirect: 'follow'
+    };
+
+    fetch(url, requestOptions)
+      .then(response => {
+        if (response.status == 200) {
+          alert('Succesfully Added new Phone')
+          setName('')
+          setPrice('')
+          setCondition('')
+          setRAM('')
+          setStorageSize('')
+          setColor('')
+          setIssues('')
+          setImage1('')
+          setImage2('')
+          setImage3('')
+        }
+        if (response.status == 501) {
+          alert("Error adding Iphone")
+        }
+      })
+      .catch(error => console.log('error', error));
 
   }
 
@@ -34,7 +80,7 @@ const Admin = () => {
     <div className="admin">
       <Navbar />
       <div className="additem">
-        <form>
+        <form onSubmit={formSubmit}>
           <input type="text" placeholder='Phone Name' maxLength={25} minLength={1} value={name} onChange={e => { setName(e.target.value) }} />
           <input type="text" placeholder='Price(N)' value={price} maxLength={25} minLength={2} onChange={e => { setPrice(e.target.value) }} />
           <input type="text" placeholder='Condition(New or Used)' maxLength={4} minLength={3} value={condition} onChange={e => { setCondition(e.target.value) }} />
@@ -47,7 +93,7 @@ const Admin = () => {
             <input type="file" accept="image/*" onChange={e => { setImage2(e.target.files[0]) }} />
             <input type="file" accept="image/*" onChange={e => { setImage3(e.target.files[0]) }} />
           </div>
-          <input className='button' type="submit" value="Submit" onSubmit={formSubmit} />
+          <button className='button'>Submit</button>
         </form>
       </div>
     </div>
