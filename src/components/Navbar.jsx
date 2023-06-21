@@ -6,6 +6,8 @@ const Navbar = () => {
     function logout() {
         localStorage.setItem('alliphonestore.isSignedIn', '')
     }
+
+
     return (
         <div className='navbar'>
             <div className="logo">All Iphone Store</div>
