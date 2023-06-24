@@ -27,45 +27,40 @@ const Admin = () => {
 
   function formSubmit(e) {
     e.preventDefault()
-    console.log('Submitting');
-    // return false
-    var myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
 
-    var urlencoded = new URLSearchParams();
-    urlencoded.append("name", name);
-    urlencoded.append("price", price);
-    urlencoded.append("condition", condition);
-    urlencoded.append("RAM", RAM);
-    urlencoded.append("storageSize", storageSize);
-    urlencoded.append("color", color);
-    urlencoded.append("issues", issues);
-    urlencoded.append("image1", image1);
-    urlencoded.append("image2", image2);
-    urlencoded.append("image3", image3);
-
+    var formdata = new FormData();
+    formdata.append("name", name);
+    formdata.append("price", price);
+    formdata.append("condition", condition);
+    formdata.append("RAM", RAM);
+    formdata.append("storageSize", storageSize);
+    formdata.append("color", color);
+    formdata.append("issues", issues);
+    formdata.append("image1", image1);
+    formdata.append("image2", image2);
+    formdata.append("image3", image3);
 
     var requestOptions = {
       method: 'POST',
-      headers: myHeaders,
-      body: urlencoded,
+      body: formdata,
       redirect: 'follow'
     };
+
 
     fetch(url, requestOptions)
       .then(response => {
         if (response.status == 200) {
           alert('Succesfully Added new Phone')
-          setName('')
-          setPrice('')
-          setCondition('')
-          setRAM('')
-          setStorageSize('')
-          setColor('')
-          setIssues('')
-          setImage1('')
-          setImage2('')
-          setImage3('')
+          // setName('')
+          // setPrice('')
+          // setCondition('')
+          // setRAM('')
+          // setStorageSize('')
+          // setColor('')
+          // setIssues('')
+          // setImage1('')
+          // setImage2('')
+          // setImage3('')
         }
         if (response.status == 501) {
           alert("Error adding Iphone")
@@ -80,7 +75,7 @@ const Admin = () => {
     <div className="admin">
       <Navbar />
       <div className="additem">
-        <form onSubmit={formSubmit}>
+        <form onSubmit={formSubmit} >
           <input type="text" placeholder='Phone Name' maxLength={25} minLength={1} value={name} onChange={e => { setName(e.target.value) }} />
           <input type="text" placeholder='Price(N)' value={price} maxLength={25} minLength={2} onChange={e => { setPrice(e.target.value) }} />
           <input type="text" placeholder='Condition(New or Used)' maxLength={4} minLength={3} value={condition} onChange={e => { setCondition(e.target.value) }} />
