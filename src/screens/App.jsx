@@ -1,4 +1,5 @@
 import '../styles/App.scss'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Navbar from '../components/Navbar'
 import Landing from "../components/Landing";
@@ -11,7 +12,6 @@ import ProductsView from './ProductsView';
 import Admin from './Admin';
 
 function App() {
-  let Component;
 
   function Home() {
     return (
@@ -24,64 +24,19 @@ function App() {
       </>
     )
   }
-  function SignUp() {
-    return (
-      <>
-        <Signup />
-      </>
-    )
-  }
-
-  function Login() {
-    return (
-      <>
-        <LogIn />
-      </>
-    )
-  }
-
-  function Productview() {
-    return (
-      <>
-        <ProductsView />
-      </>
-    )
-  }
-
-  function AdminView() {
-    return (
-      <Admin />
-    )
-  }
-
-  // My own router
-  switch (window.location.pathname) {
-    case "/":
-      Component = Home
-      break;
-    case "/signup":
-      Component = SignUp
-      break;
-    case "/login":
-      Component = Login
-      break;
-    case "/products":
-      Component = Productview
-      break;
-    case "/admin":
-      Component = AdminView
-      break;
-    default:
-      Component = Home
-  }
-
 
   return (
-    <>
+    <Router>
       <div className="app">
-        <Component />
+        <Switch>
+          <Route exact path="/"> <Home /></Route>
+          <Route exact path="/signup"> <Signup /></Route>
+          <Route exact path="/login"> <LogIn /></Route>
+          <Route exact path="/products"> <ProductsView /></Route>
+          <Route exact path="/admin"> <Admin /></Route>
+        </Switch>
       </div>
-    </>
+    </Router>
   )
 }
 
