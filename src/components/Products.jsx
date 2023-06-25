@@ -16,13 +16,13 @@ const Products = () => {
 
             <div className="itemWrapper">
                 <div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
+                    <div className="img"><img src="/assets/images/iphone11_1.jfif" alt="" /></div>
                     <div className="title">Iphone X</div>
                     <div className="condition">New</div>
                     <div className="price">N160,000</div>
                 </div>
                 <div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
+                    <div className="img"><img src="/assets/images/iphone11_1.jfif" alt="" /></div>
                     <div className="title">Iphone X</div>
                     <div className="condition">New</div>
                     <div className="price">N160,000</div>
