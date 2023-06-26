@@ -1,5 +1,5 @@
 import '../styles/App.scss'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import Navbar from '../components/Navbar'
 import Landing from "../components/Landing";
@@ -26,17 +26,17 @@ function App() {
   }
 
   return (
-    <Router>
+    <>
       <div className="app">
         <Switch>
-          <Route exact path="/"> <Home /></Route>
-          <Route exact path="/signup"> <Signup /></Route>
-          <Route exact path="/login"> <LogIn /></Route>
-          <Route exact path="/products"> <ProductsView /></Route>
-          <Route exact path="/admin"> <Admin /></Route>
+          <Route exact path="/" > <Home /></Route>
+          <Route path="/signup"> <Signup /></Route>
+          <Route path="/login"> <LogIn /></Route>
+          <Route path="/products"> <ProductsView /></Route>
+          <Route path="/admin"> <Admin /></Route>
         </Switch>
       </div>
-    </Router>
+    </>
   )
 }
 

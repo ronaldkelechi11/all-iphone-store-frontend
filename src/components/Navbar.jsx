@@ -10,7 +10,7 @@ const Navbar = () => {
 
     return (
         <div className='navbar'>
-            <div className="logo">ALL IPHONE STORE</div>
+            <a href="/" className="logo">ALL IPHONE STORE</a>
 
             <div className="links">
                 <a href="/#landing">Home</a>
