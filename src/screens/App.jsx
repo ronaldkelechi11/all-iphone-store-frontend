@@ -1,6 +1,6 @@
 import '../styles/App.scss'
 
-import { BrowserRouter, Router, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from '../components/Navbar'
 import Landing from "../components/Landing";
@@ -27,13 +27,13 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Router>
-          <Route path="/"> <Home /></Route>
-          <Route exact path="/signup"> <Signup /></Route>
-          <Route exact path="/login"> <LogIn /></Route>
-          <Route exact path="/products"> <ProductsView /></Route>
-          <Route exact path="/admin"> <Admin /></Route>
-        </Router>
+        <Routes>
+          <Route location="/"> <Home /></Route>
+          <Route location="/signup"> <Signup /></Route>
+          <Route location="/login"> <LogIn /></Route>
+          <Route location="/products"> <ProductsView /></Route>
+          <Route location="/admin"> <Admin /></Route>
+        </Routes>
       </BrowserRouter>
     </>
   )
