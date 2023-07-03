@@ -69,28 +69,4 @@ const Products = () => {
     )
 }
 
-// Item Wrapper
-export function ItemWrapper([items]) {
-    return (
-        <div className="itemWrapper">
-            {items.map(item => {
-                <Item key={item.id} item={item} />
-            })}
-        </div>
-    )
-}
-
-// Item function
-export function Item({ key, item }) {
-    return (
-        <div className="item" id="item">
-            <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-            <div className="title">{item.name}</div>
-            <div className="condition">{item.condition}</div>
-            <div className="price">{item.price}</div>
-        </div>
-    )
-}
-
-
 export default Products
