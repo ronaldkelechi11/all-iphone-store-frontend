@@ -1,5 +1,4 @@
 import '../styles/ItemView.scss'
-import { useState } from "react";
 
 const ItemView = () => {
 

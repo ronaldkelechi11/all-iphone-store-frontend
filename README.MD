@@ -1,0 +1,1 @@
+For testing the dummy data in JSON in the tests folder is for testing purposes. P.S Do not delete

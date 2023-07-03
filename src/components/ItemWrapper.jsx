@@ -1,4 +1,4 @@
-import { Item } from "./Products"
+import { Item } from "./Item"
 
 // Item Wrapper
 export function ItemWrapper([items]) {
