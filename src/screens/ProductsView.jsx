@@ -1,7 +1,6 @@
 import "../styles/ProductsView.scss"
 
 import Navbar from "../components/Navbar"
-import { Item, ItemWrapper } from "../components/Products"
 
 
 const ProductsView = () => {

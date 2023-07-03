@@ -1,4 +1,5 @@
 import '../styles/Products.scss'
+import { ItemWrapper } from './ItemWrapper'
 
 const Products = () => {
     function seemore() {
@@ -14,56 +15,7 @@ const Products = () => {
                 At the All Iphone Store we deliver the best of apple mobile devices straight to your doorstep.
             </div>
 
-            <div className="itemWrapper">
-                <div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div>
-                <div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div>
-                <div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div>
-                <div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div>
-                <div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div>
-                <div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div>
-                <div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div>
-                <div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div>
-            </div>
+            <ItemWrapper />
             <div className="seemore" onClick={seemore} id="seemore">See more</div>
         </div>
     )
