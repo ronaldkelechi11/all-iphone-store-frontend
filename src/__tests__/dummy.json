@@ -1,59 +1,104 @@
 [
     {
+        "id": "1",
         "img": "/src/assets/images/iphone11_1.jfif",
         "name": "Iphone 11",
         "condition": "Used",
         "price": "N230,000"
     },
     {
-        "img": "/src/assets/images/iphonex_1.jfif",
-        "name": "Iphone x",
-        "condition": "Used",
-        "price": "N160,000"
-    },
-    {
+        "id": "1",
         "img": "/src/assets/images/iphone11_1.jfif",
         "name": "Iphone 11",
         "condition": "Used",
         "price": "N230,000"
     },
     {
+        "id": "1",
         "img": "/src/assets/images/iphone11_1.jfif",
         "name": "Iphone 11",
         "condition": "Used",
         "price": "N230,000"
     },
     {
+        "id": "1",
         "img": "/src/assets/images/iphone11_1.jfif",
         "name": "Iphone 11",
         "condition": "Used",
         "price": "N230,000"
     },
     {
+        "id": "1",
         "img": "/src/assets/images/iphone11_1.jfif",
         "name": "Iphone 11",
         "condition": "Used",
         "price": "N230,000"
     },
     {
+        "id": "1",
         "img": "/src/assets/images/iphone11_1.jfif",
         "name": "Iphone 11",
         "condition": "Used",
         "price": "N230,000"
     },
     {
+        "id": "1",
         "img": "/src/assets/images/iphone11_1.jfif",
         "name": "Iphone 11",
         "condition": "Used",
         "price": "N230,000"
     },
     {
+        "id": "1",
         "img": "/src/assets/images/iphone11_1.jfif",
         "name": "Iphone 11",
         "condition": "Used",
         "price": "N230,000"
     },
     {
+        "id": "1",
+        "img": "/src/assets/images/iphone11_1.jfif",
+        "name": "Iphone 11",
+        "condition": "Used",
+        "price": "N230,000"
+    },
+    {
+        "id": "1",
+        "img": "/src/assets/images/iphone11_1.jfif",
+        "name": "Iphone 11",
+        "condition": "Used",
+        "price": "N230,000"
+    },
+    {
+        "id": "1",
+        "img": "/src/assets/images/iphone11_1.jfif",
+        "name": "Iphone 11",
+        "condition": "Used",
+        "price": "N230,000"
+    },
+    {
+        "id": "1",
+        "img": "/src/assets/images/iphone11_1.jfif",
+        "name": "Iphone 11",
+        "condition": "Used",
+        "price": "N230,000"
+    },
+    {
+        "id": "1",
+        "img": "/src/assets/images/iphone11_1.jfif",
+        "name": "Iphone 11",
+        "condition": "Used",
+        "price": "N230,000"
+    },
+    {
+        "id": "1",
+        "img": "/src/assets/images/iphone11_1.jfif",
+        "name": "Iphone 11",
+        "condition": "Used",
+        "price": "N230,000"
+    },
+    {
+        "id": "1",
         "img": "/src/assets/images/iphone11_1.jfif",
         "name": "Iphone 11",
         "condition": "Used",

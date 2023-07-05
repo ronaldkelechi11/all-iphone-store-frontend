@@ -1,6 +1,6 @@
 
 // Item function
-export function Item({ key, item }) {
+export function Item({ item }) {
     return (
         <div className="item" id="item">
             <div className="img"><img src={item.img} alt="" /></div>
