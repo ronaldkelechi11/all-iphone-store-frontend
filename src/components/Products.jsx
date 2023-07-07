@@ -16,7 +16,7 @@ const Products = () => {
         http.onload = function () {
             if (this.readyState == 4 && this.status == 200) {
                 var products = JSON.parse(this.responseText)
-                setProducts(products)
+                setProducts(products.slice(0, 8))
             }
         }
     }, [])
