@@ -1,9 +1,26 @@
 import "../styles/ProductsView.scss"
-
+import { useState, useEffect } from "react";
 import Navbar from "../components/Navbar"
+import { ItemWrapper } from "../components/ItemWrapper"
 
 
 const ProductsView = () => {
+    //UseState to update values
+    const [products, setProducts] = useState([])
+
+    useEffect(() => {
+        // Fetch function to get all available devices
+        let http = new XMLHttpRequest();
+        http.open('GET', '/src/__tests__/dummy.json');
+        http.send();
+        http.onload = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                setProducts(JSON.parse(this.responseText))
+            }
+        }
+    }, [])
+
+
     return (
         <div className="productsview">
             <Navbar />
@@ -15,136 +32,7 @@ const ProductsView = () => {
                 </div>
             </div>
 
-            <div className="grid">
-                <div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div>
-                <div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div><div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div><div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div><div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div><div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div><div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div><div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div><div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div><div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div><div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div><div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div><div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div><div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div><div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div><div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div><div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div><div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div><div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div><div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div><div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div><div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div><div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div><div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div><div className="item" id="item">
-                    <div className="img"><img src="/src/assets/images/iphone11_1.jfif" alt="" /></div>
-                    <div className="title">Iphone X</div>
-                    <div className="condition">New</div>
-                    <div className="price">N160,000</div>
-                </div>
-            </div>
-
+            <ItemWrapper items={products} />
         </div>
     )
 }
