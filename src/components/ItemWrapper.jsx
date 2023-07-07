@@ -1,4 +1,5 @@
 import { Item } from "./Item"
+import '../styles/ItemWrapper.scss'
 
 // Item Wrapper PRODUCTION
 export function ItemWrapper({ items }) {

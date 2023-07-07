@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../styles/Login.scss'
 import { useState } from "react";
 
@@ -12,13 +13,9 @@ const Login = () => {
     function goBack() {
         window.location.pathname = '/'
     }
-    function goToSignup() {
-        window.location.pathname = '/signup'
-    }
 
     function submitForm(e) {
         e.preventDefault()
-        console.log(email, password);
 
         var myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
@@ -49,7 +46,7 @@ const Login = () => {
                     alert("User with that Email or Password doesn't exist try again or Try signing up")
                 }
             })
-            .catch(error => console.log('error', error));
+            .catch(error => { alert('You need an Internet connection to connect to Login') });
     }
 
     return (
@@ -70,7 +67,7 @@ const Login = () => {
                         <input type="submit" value="Sign Up" id="submit_button" />
                     </form>
 
-                    <p onClick={goToSignup}>Don&apos;t have an account? <span>Register Here</span></p>
+                    <Link to={'/signup'}>Don&apos;t have an account? <span>Register Here</span></Link>
                 </div>
                 <div className="right"></div>
             </div>

@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import '../styles/Signup.scss'
+import { Link } from 'react-router-dom'
 
 const Signup = () => {
     const LOCAL_STORAGE_AUTH = 'alliphonestore.isSignedIn'
     const url = import.meta.env.VITE_APIURL + "/signup"
 
-    console.log(url);
     // States for input elements
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -17,9 +17,7 @@ const Signup = () => {
     function goBack() {
         window.location.pathname = '/'
     }
-    function goToLogin() {
-        window.location.pathname = '/login'
-    }
+
     function submit(e) {
         e.preventDefault();
         var myHeaders = new Headers();
@@ -87,7 +85,7 @@ const Signup = () => {
                         <input type="submit" value="Sign Up" id="submit_button" />
                     </form>
 
-                    <p onClick={goToLogin}>Already have an account? <span>Login Here</span></p>
+                    <Link to={'/login'}>Already have an account? <span>Login Here</span></Link>
                 </div>
                 <div className="right"></div>
             </div>
