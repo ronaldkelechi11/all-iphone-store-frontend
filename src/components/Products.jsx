@@ -8,20 +8,21 @@ const Products = () => {
     }
     //UseState to update values
     const [products, setProducts] = useState([])
+
     useEffect(() => {
-        setProducts(this.responseText)
-    }, [products])
-
-
-    // Fetch function to get all available devices
-    let http = new XMLHttpRequest();
-    http.open('GET', '/src/__tests__/dummy.json');
-    http.send();
-    http.onload = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            console.log(this.responseText);
+        // Fetch function to get all available devices
+        let http = new XMLHttpRequest();
+        http.open('GET', '/src/__tests__/dummy.json');
+        http.send();
+        http.onload = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                console.log(JSON.parse(this.responseText));
+                setProducts(JSON.parse(this.responseText))
+            }
         }
-    }
+    }, [])
+
+
 
     return (
         <div className="products" id="products">
