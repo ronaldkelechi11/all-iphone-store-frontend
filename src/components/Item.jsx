@@ -1,12 +1,14 @@
+import { Link } from "react-router-dom";
+import '../styles/Item.scss'
 
 // Item function
 export function Item({ item }) {
     return (
-        <div className="item" id="item">
-            <div className="img"><img src={item.img} alt="" /></div>
+        <Link to={'/products/' + item._id} className="item" id="item" >
+            <div className="img"><img src={item.images[0]} alt="" /></div>
             <div className="title">{item.name}</div>
             <div className="condition">{item.condition}</div>
             <div className="price">{item.price}</div>
-        </div>
+        </Link>
     )
 }

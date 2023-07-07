@@ -1,107 +1,342 @@
 [
     {
-        "id": "1",
-        "img": "/src/assets/images/iphone11_1.jfif",
+        "_id": "1",
+        "images": [
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif"
+        ],
         "name": "Iphone 11",
         "condition": "Used",
-        "price": "N230,000"
+        "price": "N230,000",
+        "description": {
+            "color": "Black",
+            "RAM": "3GB",
+            "storageSize": "500GB",
+            "issues": "None"
+        }
     },
     {
-        "id": "2",
-        "img": "/src/assets/images/iphoneX_1.jfif",
-        "name": "Iphone X",
-        "condition": "Used",
-        "price": "N170,000"
-    },
-    {
-        "id": "3",
-        "img": "/src/assets/images/iphone11_1.jfif",
+        "_id": "2",
+        "images": [
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif"
+        ],
         "name": "Iphone 11",
         "condition": "Used",
-        "price": "N230,000"
+        "price": "N230,000",
+        "description": {
+            "color": "Black",
+            "RAM": "3GB",
+            "storageSize": "500GB",
+            "issues": "None"
+        }
     },
     {
-        "id": "4",
-        "img": "/src/assets/images/iphone11_1.jfif",
+        "_id": "3",
+        "images": [
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif"
+        ],
         "name": "Iphone 11",
         "condition": "Used",
-        "price": "N230,000"
+        "price": "N230,000",
+        "description": {
+            "color": "Black",
+            "RAM": "3GB",
+            "storageSize": "500GB",
+            "issues": "None"
+        }
     },
     {
-        "id": "5",
-        "img": "/src/assets/images/iphone11_1.jfif",
+        "_id": "4",
+        "images": [
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif"
+        ],
         "name": "Iphone 11",
         "condition": "Used",
-        "price": "N230,000"
+        "price": "N230,000",
+        "description": {
+            "color": "Black",
+            "RAM": "3GB",
+            "storageSize": "500GB",
+            "issues": "None"
+        }
     },
     {
-        "id": "6",
-        "img": "/src/assets/images/iphone11_1.jfif",
+        "_id": "5",
+        "images": [
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif"
+        ],
         "name": "Iphone 11",
         "condition": "Used",
-        "price": "N230,000"
+        "price": "N230,000",
+        "description": {
+            "color": "Black",
+            "RAM": "3GB",
+            "storageSize": "500GB",
+            "issues": "None"
+        }
     },
     {
-        "id": "7",
-        "img": "/src/assets/images/iphone11_1.jfif",
+        "_id": "6",
+        "images": [
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif"
+        ],
         "name": "Iphone 11",
         "condition": "Used",
-        "price": "N230,000"
+        "price": "N230,000",
+        "description": {
+            "color": "Black",
+            "RAM": "3GB",
+            "storageSize": "500GB",
+            "issues": "None"
+        }
     },
     {
-        "id": "8",
-        "img": "/src/assets/images/iphone11_1.jfif",
+        "_id": "7",
+        "images": [
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif"
+        ],
         "name": "Iphone 11",
         "condition": "Used",
-        "price": "N230,000"
+        "price": "N230,000",
+        "description": {
+            "color": "Black",
+            "RAM": "3GB",
+            "storageSize": "500GB",
+            "issues": "None"
+        }
     },
     {
-        "id": "9",
-        "img": "/src/assets/images/iphone11_1.jfif",
+        "_id": "8",
+        "images": [
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif"
+        ],
         "name": "Iphone 11",
         "condition": "Used",
-        "price": "N230,000"
+        "price": "N230,000",
+        "description": {
+            "color": "Black",
+            "RAM": "3GB",
+            "storageSize": "500GB",
+            "issues": "None"
+        }
     },
     {
-        "id": "10",
-        "img": "/src/assets/images/iphone11_1.jfif",
+        "_id": "9",
+        "images": [
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif"
+        ],
         "name": "Iphone 11",
         "condition": "Used",
-        "price": "N230,000"
+        "price": "N230,000",
+        "description": {
+            "color": "Black",
+            "RAM": "3GB",
+            "storageSize": "500GB",
+            "issues": "None"
+        }
     },
     {
-        "id": "11",
-        "img": "/src/assets/images/iphone11_1.jfif",
+        "_id": "10",
+        "images": [
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif"
+        ],
         "name": "Iphone 11",
         "condition": "Used",
-        "price": "N230,000"
+        "price": "N230,000",
+        "description": {
+            "color": "Black",
+            "RAM": "3GB",
+            "storageSize": "500GB",
+            "issues": "None"
+        }
     },
     {
-        "id": "12",
-        "img": "/src/assets/images/iphone11_1.jfif",
+        "_id": "11",
+        "images": [
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif"
+        ],
         "name": "Iphone 11",
         "condition": "Used",
-        "price": "N230,000"
+        "price": "N230,000",
+        "description": {
+            "color": "Black",
+            "RAM": "3GB",
+            "storageSize": "500GB",
+            "issues": "None"
+        }
     },
     {
-        "id": "13",
-        "img": "/src/assets/images/iphone11_1.jfif",
+        "_id": "12",
+        "images": [
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif"
+        ],
         "name": "Iphone 11",
         "condition": "Used",
-        "price": "N230,000"
+        "price": "N230,000",
+        "description": {
+            "color": "Black",
+            "RAM": "3GB",
+            "storageSize": "500GB",
+            "issues": "None"
+        }
     },
     {
-        "id": "14",
-        "img": "/src/assets/images/iphone11_1.jfif",
+        "_id": "13",
+        "images": [
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif"
+        ],
         "name": "Iphone 11",
         "condition": "Used",
-        "price": "N230,000"
+        "price": "N230,000",
+        "description": {
+            "color": "Black",
+            "RAM": "3GB",
+            "storageSize": "500GB",
+            "issues": "None"
+        }
     },
     {
-        "id": "15",
-        "img": "/src/assets/images/iphone11_1.jfif",
+        "_id": "14",
+        "images": [
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif"
+        ],
         "name": "Iphone 11",
         "condition": "Used",
-        "price": "N230,000"
+        "price": "N230,000",
+        "description": {
+            "color": "Black",
+            "RAM": "3GB",
+            "storageSize": "500GB",
+            "issues": "None"
+        }
+    },
+    {
+        "_id": "15",
+        "images": [
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif"
+        ],
+        "name": "Iphone 11",
+        "condition": "Used",
+        "price": "N230,000",
+        "description": {
+            "color": "Black",
+            "RAM": "3GB",
+            "storageSize": "500GB",
+            "issues": "None"
+        }
+    },
+    {
+        "_id": "16",
+        "images": [
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif"
+        ],
+        "name": "Iphone 11",
+        "condition": "Used",
+        "price": "N230,000",
+        "description": {
+            "color": "Black",
+            "RAM": "3GB",
+            "storageSize": "500GB",
+            "issues": "None"
+        }
+    },
+    {
+        "_id": "17",
+        "images": [
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif"
+        ],
+        "name": "Iphone 11",
+        "condition": "Used",
+        "price": "N230,000",
+        "description": {
+            "color": "Black",
+            "RAM": "3GB",
+            "storageSize": "500GB",
+            "issues": "None"
+        }
+    },
+    {
+        "_id": "18",
+        "images": [
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif"
+        ],
+        "name": "Iphone 11",
+        "condition": "Used",
+        "price": "N230,000",
+        "description": {
+            "color": "Black",
+            "RAM": "3GB",
+            "storageSize": "500GB",
+            "issues": "None"
+        }
+    },
+    {
+        "_id": "19",
+        "images": [
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif"
+        ],
+        "name": "Iphone 11",
+        "condition": "Used",
+        "price": "N230,000",
+        "description": {
+            "color": "Black",
+            "RAM": "3GB",
+            "storageSize": "500GB",
+            "issues": "None"
+        }
+    },
+    {
+        "_id": "20",
+        "images": [
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif",
+            "/src/assets/images/iphone11_1.jfif"
+        ],
+        "name": "Iphone 11",
+        "condition": "Used",
+        "price": "N230,000",
+        "description": {
+            "color": "Black",
+            "RAM": "3GB",
+            "storageSize": "500GB",
+            "issues": "None"
+        }
     }
 ]

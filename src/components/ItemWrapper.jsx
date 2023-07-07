@@ -7,7 +7,7 @@ export function ItemWrapper({ items }) {
         <div className="itemWrapper">
             {
                 items.map(item => {
-                    return (<Item key={item.id} item={item} />)
+                    return (<Item key={item._id} item={item} />)
                 })
             }
         </div>

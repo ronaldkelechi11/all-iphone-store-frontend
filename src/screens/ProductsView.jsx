@@ -20,6 +20,11 @@ const ProductsView = () => {
         }
     }, [])
 
+    function filterSearch() {
+        //Recieves the search word and finds iphone name based on that 
+        //search word
+    }
+
 
     return (
         <div className="productsview">
@@ -28,7 +33,7 @@ const ProductsView = () => {
             <div className="searchBar">
                 <div className="searchBarBar">
                     <input type="search" name="search" id="search" className="search" placeholder="Search" />
-                    <button className="searchButton">Search</button>
+                    <button onClick={filterSearch} className="searchButton">Search</button>
                 </div>
             </div>
 
