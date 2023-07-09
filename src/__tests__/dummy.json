@@ -19,18 +19,18 @@
     {
         "_id": "2",
         "images": [
-            "/src/assets/images/iphone11_1.jfif",
-            "/src/assets/images/iphone11_1.jfif",
-            "/src/assets/images/iphone11_1.jfif"
+            "/src/assets/images/iphoneX_1.jfif",
+            "/src/assets/images/iphoneX_1.jfif",
+            "/src/assets/images/iphoneX_1.jfif"
         ],
-        "name": "Iphone 11",
+        "name": "Iphone X",
         "condition": "Used",
-        "price": "N230,000",
+        "price": "N170,000",
         "description": {
-            "color": "Black",
+            "color": "White",
             "RAM": "3GB",
-            "storageSize": "500GB",
-            "issues": "None"
+            "storageSize": "250GB",
+            "issues": "No Face Id"
         }
     },
     {

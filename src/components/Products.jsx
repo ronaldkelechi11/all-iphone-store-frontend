@@ -30,7 +30,7 @@ const Products = () => {
                 At the All Iphone Store we deliver the best of apple mobile devices straight to your doorstep.
             </div>
             <ItemWrapper items={products} />
-            <Link to={'/products'} className="seemore">See more</Link>
+            <Link to={'/products'} className="seemore">See more {'>>>'}</Link>
         </div>
     )
 }

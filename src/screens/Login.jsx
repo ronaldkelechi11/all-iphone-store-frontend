@@ -1,9 +1,10 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import '../styles/Login.scss'
-import { useState } from "react";
+import { ReactDOM, useState } from "react";
 
 
 const Login = () => {
+    const navigate = useNavigate()
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const url = import.meta.env.VITE_APIURL + "/login"
@@ -35,18 +36,18 @@ const Login = () => {
             .then(response => {
                 console.log(response);
                 if (response.status == 200) {
-                    window.location = "/"
+                    navigate("/")
                     localStorage.setItem(LOCAL_STORAGE_AUTH, true);
                 }
                 if (response.status == 300) {
-                    window.location = "/admin"
+                    navigate("/admin")
                     localStorage.setItem(LOCAL_STORAGE_ADMIN, true);
                 }
                 else if (response.status == 400) {
                     alert("User with that Email or Password doesn't exist try again or Try signing up")
                 }
             })
-            .catch(error => { alert('You need an Internet connection to connect to Login') });
+            .catch(() => { alert('You need an Internet connection to connect to Login') });
     }
 
     return (
@@ -59,7 +60,7 @@ const Login = () => {
                     <h1>Login</h1>
                     <h4>Login to access our services on this device</h4>
 
-                    <form method="post" id="form" onSubmit={submitForm}>
+                    <form method="post" onSubmit={submitForm}>
                         <input type="email" placeholder="Email" required min="2" max="64" value={email}
                             onChange={(e) => setEmail(e.target.value)} />
                         <input type="password" placeholder="Password" required min="8"

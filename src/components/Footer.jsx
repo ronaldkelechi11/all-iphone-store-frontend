@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import '../styles/Footer.scss'
 
 const Footer = () => {
@@ -22,10 +23,8 @@ const Footer = () => {
                     <a href="/#landing">Home</a>
                     <a href="/#products">Products</a>
                     <a href="/#contactus">Contact</a>
-                    <a href="/signup" >Sign Up</a>
-                    <a href="/login" >Log In</a>
-                    <a href="#">
-                        Cart</a>
+                    <Link to="/signup" >Sign Up</Link>
+                    <Link to="/login" >Log In</Link>
                 </div>
             </div>
             <div className="getintouch">
@@ -37,7 +36,7 @@ const Footer = () => {
                 <h4>Umuahia, Abia State, Nigeria.</h4>
             </div>
 
-        </div>
+        </div >
     )
 }
 

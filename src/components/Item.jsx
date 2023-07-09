@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import '../styles/Item.scss'
 
 // Item function
+// eslint-disable-next-line react/prop-types
 export function Item({ item }) {
     return (
         <Link to={'/products/' + item._id} className="item" id="item" >

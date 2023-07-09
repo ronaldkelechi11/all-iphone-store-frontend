@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import '../styles/Signup.scss'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Signup = () => {
     const LOCAL_STORAGE_AUTH = 'alliphonestore.isSignedIn'
     const url = import.meta.env.VITE_APIURL + "/signup"
+    const navigate = useNavigate()
 
     // States for input elements
     const [name, setName] = useState('')
@@ -15,7 +16,7 @@ const Signup = () => {
     const [password, setPassword] = useState('')
 
     function goBack() {
-        window.location.pathname = '/'
+        navigate("/")
     }
 
     function submit(e) {
@@ -41,7 +42,7 @@ const Signup = () => {
         fetch(url, requestOptions)
             .then(response => {
                 if (response.status == 200) {
-                    window.location.pathname = "/"
+                    navigate("/")
                     localStorage.setItem(LOCAL_STORAGE_AUTH, 'true')
                 }
                 else if (response.status == 400) {
