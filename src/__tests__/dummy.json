@@ -19,9 +19,10 @@
     {
         "_id": "2",
         "images": [
-            "/src/assets/images/iphoneX_1.jfif",
-            "/src/assets/images/iphoneX_1.jfif",
-            "/src/assets/images/iphoneX_1.jfif"
+            "/src/assets/images/iphonex_1.jfif",
+            "/src/assets/images/iphonex_1.jfif",
+            "/src/assets/images/iphonex_1.jfif",
+            "/src/assets/images/iphonex_1.jfif"
         ],
         "name": "Iphone X",
         "condition": "Used",

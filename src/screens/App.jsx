@@ -8,6 +8,7 @@ import LogIn from './Login';
 import ProductsView from './ProductsView'
 import Admin from './Admin.jsx';
 import ItemView from './ItemView';
+import Cart from './Cart';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
           <Route path=':id' element={<ItemView />} />
         </Route>
         <Route path='/admin' element={<Admin />} />
+        <Route path='/cart' element={<Cart />} />
       </Routes>
     </>
   )

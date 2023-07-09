@@ -5,5 +5,43 @@
     height: 100%;
     display: flex;
     flex-direction: row;
-    background-color: red;
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 100%;
+
+        .productName {
+            color: black;
+            font-family: $mainFontFamily;
+            font-size: 38px;
+            margin: 10px;
+        }
+
+        .productImageRow {
+            scroll-behavior: auto;
+            overflow-x: scroll;
+            height: 300px;
+            margin: 10px;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+
+            img {
+                height: 100%;
+                width: 300px;
+            }
+        }
+
+
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 100%;
+        background-color: green;
+    }
 }
