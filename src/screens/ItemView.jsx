@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import '../styles/ItemView.scss'
 import { useState, useEffect } from "react";
+import Navbar from '../components/Navbar';
 
 const ItemView = () => {
     const [product, setProduct] = useState({
@@ -36,22 +37,33 @@ const ItemView = () => {
     }, [])
 
     return (
-        <div className="itemView">
-            <div className="left">
-                <div className="productName">{product.name}</div>
+        <>
+            <Navbar />
+            <div className="itemView">
+                <div className="left">
+                    <div className="productName">{product.name}</div>
 
-                <div className="productImageRow">
-                    {product.images.map(image => {
-                        console.log(image);
-                        return (
-                            // eslint-disable-next-line react/jsx-key
-                            <img src={image} alt="" />
-                        )
-                    })}
+                    <div className="productImageRow">
+                        {product.images.map(image => {
+                            console.log(image);
+                            return (
+                                // eslint-disable-next-line react/jsx-key
+                                <img src={image} alt="" />
+                            )
+                        })}
+                    </div>
+
+                    <div className="addToCart">Add to Cart</div>
+
+                    <div className="description">
+
+                    </div>
+                </div>
+                <div className="right">
+                    <div className="header">Similar Products</div>
                 </div>
             </div>
-            <div className="right"></div>
-        </div>
+        </>
     )
 }
 
