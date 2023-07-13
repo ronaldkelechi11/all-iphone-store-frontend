@@ -45,7 +45,6 @@ const ItemView = () => {
 
                     <div className="productImageRow">
                         {product.images.map(image => {
-                            console.log(image);
                             return (
                                 // eslint-disable-next-line react/jsx-key
                                 <img src={image} alt="" />
@@ -56,7 +55,26 @@ const ItemView = () => {
                     <div className="addToCart">Add to Cart</div>
 
                     <div className="description">
+                        <p>Description</p>
 
+                        <table>
+                            <div className="tablerow">
+                                <h1>Colour:</h1>
+                                <h1>{product.description.color}</h1>
+                            </div>
+                            <div className="tablerow">
+                                <h1>RAM:</h1>
+                                <h1>{product.description.RAM}</h1>
+                            </div>
+                            <div className="tablerow">
+                                <h1>Storage Size:</h1>
+                                <h1>{product.description.storageSize}</h1>
+                            </div>
+                            <div className="tablerow">
+                                <h1>Issues:</h1>
+                                <h1>{product.description.issues}</h1>
+                            </div>
+                        </table>
                     </div>
                 </div>
                 <div className="right">
